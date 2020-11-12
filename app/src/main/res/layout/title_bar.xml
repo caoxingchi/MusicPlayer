@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+	>
+	
+	<com.hjq.bar.TitleBar
+			android:id="@+id/title_bar"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+		    android:background="@drawable/titlebar_background"
+		    app:titleSize="20sp"
+			app:title="主页"
+			app:leftIcon="@mipmap/ico_menu"
+		    app:leftColor="@color/white"
+			app:titleColor="@color/white"
+	/>
+</LinearLayout>

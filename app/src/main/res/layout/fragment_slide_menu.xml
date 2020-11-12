@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/slide_menu_fr"
+    android:background="@drawable/slide_menu_background"
+    >
+
+    <ImageView
+        android:id="@+id/slide_menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/background_your_name"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/slide_menu_header"
+        android:id="@+id/slide_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <include
+        android:id="@+id/slide_ll"
+        layout="@layout/slide_menu_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="51dp"
+        android:layout_width="match_parent"
+        />
+</RelativeLayout>

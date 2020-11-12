@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scan_music_fr"
+    tools:context=".ScanMusicActivity"
+
+    >
+    <include
+        layout="@layout/title_bar"
+        android:id="@+id/tt"
+        />
+    <LinearLayout
+        android:id="@+id/scan_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <com.kongqw.radarscanviewlibrary.RadarScanView
+            android:id="@+id/scan_file"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            />
+
+
+            <com.qmuiteam.qmui.alpha.QMUIAlphaButton
+                android:layout_margin="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="开始扫描"
+                android:id="@+id/start_scan_btn"
+
+                />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/tt"
+        android:id="@+id/scan_recycler_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/songs_list_background"
+        />
+
+
+</RelativeLayout>

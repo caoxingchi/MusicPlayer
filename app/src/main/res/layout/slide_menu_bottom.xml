@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/blueTransparent"
+    android:baselineAligned="false" android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/slide_setting_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_settings" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="设置"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slide_exit_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_exit" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="退出"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+</LinearLayout>

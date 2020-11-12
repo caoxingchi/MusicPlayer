@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">聆听音乐</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about_us">
+        组长:2017117102 操星驰 "\n"
+        成员:2017117147 李斯   "\n"
+        成员:2017117132 刘韦佳 "\n"
+    </string>
+</resources>
